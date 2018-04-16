@@ -1,0 +1,59 @@
+
+// System
+@font-face {
+    font-family: system;
+    font-style: normal;
+    font-weight: 300;
+    src: local(".SFNSText-Light"),
+         local(".HelveticaNeueDeskInterface-Light"),
+         local(".LucidaGrandeUI"),
+         local("Ubuntu Light"),
+         local("Segoe UI Light"),
+         local("Roboto-Light"),
+         local("DroidSans"),
+         local("Tahoma");
+}
+
+// Locator Web Light
+@font-face {
+    font-family: 'LocatorWeb';
+    src: url('webfonts/LocatorWebLight/LocatorWebLight.eot');
+    src: url('webfonts/LocatorWebLight/LocatorWebLight.eot?#iefix') format('embedded-opentype'),
+         url('webfonts/LocatorWebLight/LocatorWebLight.woff2') format('woff2'),
+         url('webfonts/LocatorWebLight/LocatorWebLight.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+// Locator Web Light Italic
+@font-face {
+    font-family: 'LocatorWeb';
+    src: url('webfonts/LocatorWebLightItalic/LocatorWebLightItalic.eot');
+    src: url('webfonts/LocatorWebLightItalic/LocatorWebLightItalic.eot?#iefix') format('embedded-opentype'),
+         url('webfonts/LocatorWebLightItalic/LocatorWebLightItalic.woff2') format('woff2'),
+         url('webfonts/LocatorWebLightItalic/LocatorWebLightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+}
+
+// Locator Web Medium
+@font-face {
+    font-family: 'LocatorWeb';
+    src: url('webfonts/LocatorWebMedium/LocatorWebMedium.eot');
+    src: url('webfonts/LocatorWebMedium/LocatorWebMedium.eot?#iefix') format('embedded-opentype'),
+         url('webfonts/LocatorWebMedium/LocatorWebMedium.woff2') format('woff2'),
+         url('webfonts/LocatorWebMedium/LocatorWebMedium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+// Locator Web Medium Italic
+@font-face {
+    font-family: 'LocatorWeb';
+    src: url('webfonts/LocatorWebMediumItalic/LocatorWebMediumItalic.eot');
+    src: url('webfonts/LocatorWebMediumItalic/LocatorWebMediumItalic.eot?#iefix') format('embedded-opentype'),
+         url('webfonts/LocatorWebMediumItalic/LocatorWebMediumItalic.woff2') format('woff2'),
+         url('webfonts/LocatorWebMediumItalic/LocatorWebMediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+}

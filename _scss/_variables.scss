@@ -1,0 +1,31 @@
+// Colors
+
+$c-whitespace: rgba(255, 255, 255, 1);
+
+$c-bgmain: #C6DAE7;
+$c-bgsecond: rgba(242, 243, 242, 1);
+
+$c-fontmain: #54585A;
+$c-fontsecond: #D9D9D6;
+
+$c-flair: #78BE20;
+
+// Shapes and sizes
+
+$cardxy: 35rem;
+
+$section-wide: 85vw;
+$wide-enough: 82rem;
+
+$circle-frame: 47%;
+$thumbxy: 140px;
+$thumbpad: 4vw;
+$thumby-article-w : calc(100% - 140px - 4vw);
+
+$boxy-pad: 2.5em 5vw;
+$card-space: 5em;
+
+$narrow-text: 0.88;
+$de-narrower: 1/$narrow-text*100%;
+$narrowed-offset: $de-narrower/2 - 50%;
+$line-height: 1.25em;

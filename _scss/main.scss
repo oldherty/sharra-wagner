@@ -1,0 +1,259 @@
+// All together now
+
+@import '_variables';
+@import '_extends';
+@import '_fonts';
+
+
+// Mini-Reset
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html {
+    font-size: 0.625em;
+}
+img {
+    width: 100%;
+}
+body {
+    font-family: 'LocatorWeb', 'system', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: $c-fontmain;
+    background-color: $c-whitespace;
+}
+.stealth {
+    color: inherit;
+    text-decoration: none;
+}
+
+// The BIG Header
+
+header {
+    position: relative;
+    background-color: $c-bgmain;
+    .title-zone {
+        background-color: $c-whitespace;
+    }
+    &.homey-head {
+        background-image: url('../images/structure/SW-branches.png');
+        background-size: 560px;
+        background-position: 54% 0.5em;
+        background-repeat: no-repeat;
+        text-align: center;
+        padding: $boxy-pad;
+        img {
+            position: absolute;
+            left: 0;
+            bottom: 21%;
+            max-width: 1200px;
+        }
+        // In the card
+        .title-zone {
+            width: $cardxy;
+            height: $cardxy;
+            padding: $card-space 0 $card-space*2.5;
+            margin: $card-space auto $card-space*1.2;
+        }
+        h1 {
+            @extend %cappy-space;
+            font-size: 5.4rem;
+            line-height: $line-height;
+        }
+        h2 {
+            @extend %cappy-space;
+            font-size: 1.65rem;
+            margin: 1em 0;
+        }
+    }
+    // Compact header stuffs
+    &.away-head {
+        height: 15.4rem;
+        padding: 1.2rem 0;
+        section {
+            position: relative;
+            margin: 0 auto;
+            &:before {
+                content: "";
+                position: absolute;
+                top: -42rem;
+                left: 24rem;
+                width: 190px;
+                height: 900px;
+                z-index: 0;
+                background-image: url("../images/structure/SW-branches.png");
+                background-repeat: no-repeat;
+                background-size: 750px;
+                transform: rotate(101deg);
+            }
+        }
+        .title-zone {
+            position: absolute;
+            width: 14rem;
+            height: 13rem;
+            text-align: center;
+            border: 1px solid #f2f3f2;
+            border-radius: 7% 7% 0 7%;
+            padding-top: 2.85rem;
+        }
+        h4 {
+            @extend %cappy-space;
+            font-size: 2.6rem;
+        }
+        h5 {
+            @extend %cappy-space;
+            font-size: 1.08rem;
+            width: 120%;
+            left: -10%;
+            letter-spacing: 0.09em;
+            transform: scaleX(0.77);
+            margin-top: 0.6em;
+        }
+    }
+}
+
+
+// The main nav
+
+nav ul {
+    @extend %box-it;
+    width: $section-wide;
+    max-width: $wide-enough;
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    border-bottom: 1px solid $c-bgsecond;
+    margin: 0 auto;
+    li {
+        font-size: 1.8rem;
+        text-transform: uppercase;
+        transform: scaleX($narrow-text);
+        a {
+            @extend %nude-link;
+        }
+    }
+}
+.away-head + nav {
+    position: relative;
+    top: -4.3rem;
+    left: 0.8rem;
+    ul {
+        padding: 0;
+        justify-content: flex-end;
+        li {
+            margin: 0.766rem 2.666rem;
+        }
+    }
+}
+
+
+// In the body
+
+h3, .content h1 {
+    @extend %block-text-narrow;
+    font-size: 2.8rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin: 0 0 1.5em;
+}
+p {
+    @extend %block-text-narrow;
+    font-size: 2.0rem;
+    line-height: $line-height;
+    margin: 1em 0;
+}
+section {
+    @extend %not-boxed;
+}
+article {
+    margin-bottom: 4vw;
+    &.has-aside {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+aside {
+    width: 17vw;
+    min-width: 20rem;
+    margin-right: $thumbpad;
+    img {
+        position: relative;
+        top: 1px;
+        margin: -1px 0;
+    }
+}
+aside.circle {
+    width: $thumbxy;
+    min-width: $thumbxy;
+    height: $thumbxy;
+    border-radius: $circle-frame;
+    overflow: hidden;
+}
+aside + .besides {
+    flex-basis: $thumby-article-w;
+}
+
+
+// Performant stuffs
+
+.performance h4 {
+    font-size: 2.0rem;
+    line-height: 1.25em;
+}
+.performance .date, .performance .role, .performance .location {
+    font-size: 1.6rem;
+    line-height: 1.25em;
+}
+.performance .role {
+    font-style: italic;
+}
+a.button-link {
+    display: inline-block;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+    background-color: #78BE20;
+    padding: 0.6em 0.8em 0.5em;
+    border-radius: 0.25em;
+    margin-top: 0.5em;
+}
+.content > div > .performance {
+    margin-bottom: 2vw;
+}
+
+// Quotes
+
+blockquote {
+    @extend %box-it;
+    clear: both;
+    background-color: $c-bgsecond;
+    padding-bottom: 6rem;
+    p {
+        left: 0;
+        font-size: 2.4rem;
+        max-width: 22em;
+        margin: 0 auto 0.25em;
+        &:before {
+            content: '\201C';
+        }
+        &:after {
+            content: '\201D';
+        }
+    }
+    figcaption {
+        @extend %cappy-normal;
+    }
+}
+
+
+
+// Foots
+
+footer {
+    @extend %box-it;
+    background-color: $c-bgmain;
+}

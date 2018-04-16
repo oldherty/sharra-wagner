@@ -1,0 +1,75 @@
+header.homey-head {
+  background-image: url("../images/structure/SW-branches.png");
+  background-repeat: no-repeat;
+  background-size: 560px;
+  background-position: 54% 0.5em;
+  padding: 2.5em 5vw;
+}
+header img {
+  position: absolute;
+  left: 0;
+  bottom: 21%;
+  max-width: 1200px;
+}
+.homey-head .title-zone {
+  padding: 5em 0 12.5em;
+  margin: 5em auto 6em;
+}
+
+nav ul {
+  width: 85vw;
+  max-width: 82rem;
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  border-bottom: 1px solid #f2f3f2;
+  margin: 0 auto;
+}
+h3 {
+  text-transform: uppercase;
+  font-size: 2.8rem;
+}
+
+p {
+  font-size: 2rem;
+  line-height: 1.25em;
+  margin: 1em 0;
+}
+
+section {
+  display: flex;
+  justify-content: space-between;
+}
+
+aside {
+  margin-right: 5vw;
+}
+aside img {
+  position: relative;
+  top: 1px;
+  margin: -1px 0;
+}
+
+aside + article {
+  flex-basis: 78%;
+}
+
+blockquote {
+  clear: both;
+  background-color: #f2f3f2;
+  padding-bottom: 6rem;
+}
+blockquote p {
+  font-size: 2.4rem;
+  max-width: 22em;
+  margin: 0 auto 0.25em;
+}
+blockquote p:before {
+  content: "“";
+}
+blockquote p:after {
+  content: "”";
+}
+footer {
+  background-color: #C6DAE7;
+}

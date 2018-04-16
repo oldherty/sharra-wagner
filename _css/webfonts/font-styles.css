@@ -1,0 +1,73 @@
+/*
+- - - > |  @font-face  | < - - - 
+*/
+/* Locator Web Light */
+	@font-face {
+	font-family: 'LocatorWeb';
+	src: url('LocatorWebLight/LocatorWebLight.eot');
+	src: url('LocatorWebLight/LocatorWebLight.eot?#iefix') format('embedded-opentype'),
+         url('LocatorWebLight/LocatorWebLight.woff2') format('woff2'),
+         url('LocatorWebLight/LocatorWebLight.woff') format('woff');
+	font-weight: 300;
+	font-style: normal;
+	}
+
+/* Locator Web Light Italic */
+	@font-face {
+	font-family: 'LocatorWeb';
+	src: url('LocatorWebLightItalic/LocatorWebLightItalic.eot');
+	src: url('LocatorWebLightItalic/LocatorWebLightItalic.eot?#iefix') format('embedded-opentype'),
+         url('LocatorWebLightItalic/LocatorWebLightItalic.woff2') format('woff2'),
+         url('LocatorWebLightItalic/LocatorWebLightItalic.woff') format('woff');
+	font-weight: 300;
+	font-style: italic;
+	}
+
+/* Locator Web Medium */
+	@font-face {
+	font-family: 'LocatorWeb';
+	src: url('LocatorWebMedium/LocatorWebMedium.eot');
+	src: url('LocatorWebMedium/LocatorWebMedium.eot?#iefix') format('embedded-opentype'),
+         url('LocatorWebMedium/LocatorWebMedium.woff2') format('woff2'),
+         url('LocatorWebMedium/LocatorWebMedium.woff') format('woff');
+	font-weight: 500;
+	font-style: normal;
+	}
+
+/* Locator Web Medium Italic */
+	@font-face {
+	font-family: 'LocatorWeb';
+	src: url('LocatorWebMediumItalic/LocatorWebMediumItalic.eot');
+	src: url('LocatorWebMediumItalic/LocatorWebMediumItalic.eot?#iefix') format('embedded-opentype'),
+         url('LocatorWebMediumItalic/LocatorWebMediumItalic.woff2') format('woff2'),
+         url('LocatorWebMediumItalic/LocatorWebMediumItalic.woff') format('woff');
+	font-weight: 500;
+	font-style: italic;
+	}
+
+/*
+- - - > |  Font Classes  | < - - - 
+*/
+.LocatorWebLight {
+	font-family: 'LocatorWeb';
+	font-weight: 300;
+	font-style: normal;
+	}
+
+.LocatorWebLightItalic {
+	font-family: 'LocatorWeb';
+	font-weight: 300;
+	font-style: italic;
+	}
+
+.LocatorWebMedium {
+	font-family: 'LocatorWeb';
+	font-weight: 500;
+	font-style: normal;
+	}
+
+.LocatorWebMediumItalic {
+	font-family: 'LocatorWeb';
+	font-weight: 500;
+	font-style: italic;
+	}
